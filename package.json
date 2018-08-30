@@ -1,0 +1,9 @@
+{
+  "name": "thp2_api_tg",
+  "scripts": {
+    "precommit": "rspec --format progress && rubocop"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3"
+  }
+}

@@ -1,0 +1,15 @@
+inherit_from:
+  - http://relaxed.ruby.style/rubocop.yml
+
+AllCops:
+  DisplayStyleGuide: true
+  DisplayCopNames: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'Guardfile'
+    - 'thp2_api_tg.gemspec'

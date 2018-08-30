@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://0.0.0.0:3000/auth/sign_in
+    body:
+      encoding: UTF-8
+      string: login=tibog&password=12345678
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Token:
+      - jS1QBxAByWp0VvZS9wsFcA
+      Token-Type:
+      - Bearer
+      Client:
+      - EsZfuizE-FDGZxoWiwx5Lw
+      Expiry:
+      - '1536855091'
+      Uid:
+      - azerty1990@gmail.com
+      Etag:
+      - W/"c9c9ba3dadb59e764d81227e382d6c0c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 29aad313-db11-4920-bab0-0b50f608b64c
+      X-Runtime:
+      - '1.320443'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f4d4ad70-5410-42bc-aa4b-092061321040","email":"azerty1990@gmail.com","provider":"email","username":"tibog","uid":"azerty1990@gmail.com","confirmed_at":null}}'
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 16:11:32 GMT
+recorded_with: VCR 4.0.0

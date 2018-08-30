@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://0.0.0.0:3000/auth/sign_in
+    body:
+      encoding: UTF-8
+      string: login=tibog&password=12345678
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Token:
+      - "-EcHLOh7_HZBMUO14L5OKQ"
+      Token-Type:
+      - Bearer
+      Client:
+      - 3PvihOKcMcEJYiqPZ6d5Fw
+      Expiry:
+      - '1536855120'
+      Uid:
+      - azerty1990@gmail.com
+      Etag:
+      - W/"c9c9ba3dadb59e764d81227e382d6c0c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 80183980-5042-48e9-b08f-df6a4286c79b
+      X-Runtime:
+      - '1.000635'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f4d4ad70-5410-42bc-aa4b-092061321040","email":"azerty1990@gmail.com","provider":"email","username":"tibog","uid":"azerty1990@gmail.com","confirmed_at":null}}'
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 16:12:01 GMT
+- request:
+    method: get
+    uri: http://0.0.0.0:3000/lessons
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Access-Token:
+      - "-EcHLOh7_HZBMUO14L5OKQ"
+      Client:
+      - 3PvihOKcMcEJYiqPZ6d5Fw
+      Expiry:
+      - '1536855120'
+      Token-Type:
+      - bearer
+      Uid:
+      - azerty1990@gmail.com
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Access-Token:
+      - ''
+      Token-Type:
+      - Bearer
+      Client:
+      - 3PvihOKcMcEJYiqPZ6d5Fw
+      Expiry:
+      - ''
+      Uid:
+      - azerty1990@gmail.com
+      Etag:
+      - W/"2c805a502cce8d77f95d9f4eed5297b2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 47939b35-37bb-4bf1-83f8-4fc7654a02b0
+      X-Runtime:
+      - '0.672605'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"lessons":[]}'
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 16:12:01 GMT
+recorded_with: VCR 4.0.0
