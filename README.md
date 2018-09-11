@@ -1,7 +1,7 @@
 # Thp2ApiTg
 
 This gem is made for consuming Thp2 API. 
-Once you're loggedin, you can manage courses, classrooms, students and teachers.
+Once you are logged in, you can manage courses, classrooms, students and teachers.
 
 ## Installation
 
